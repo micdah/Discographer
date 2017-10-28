@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using System.Diagnostics;
 using Discographer.Models;
+using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace Discographer.Controllers
 {
     public class HomeController : Controller
     {
+        private static readonly ILogger Log = Serilog.Log.ForContext<HomeController>();
+
         public IActionResult Index()
         {
             return View();
