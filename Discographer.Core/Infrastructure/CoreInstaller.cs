@@ -1,7 +1,8 @@
 ﻿using Autofac;
 using Microsoft.Extensions.DependencyInjection;
 using Autofac.Extensions.DependencyInjection;
-namespace Discographer.Core
+
+namespace Discographer.Core.Infrastructure
 {
     public static class CoreInstaller
     {

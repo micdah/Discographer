@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using Discographer.Core;
+using Discographer.Core.Infrastructure;
 
 namespace Discographer
 {
