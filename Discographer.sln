@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discographer", "Discographe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discographer.Core", "Discographer.Core\Discographer.Core.csproj", "{18801C06-C859-4593-B62F-B22D30ABB09C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discographer.Domain", "Discographer.Domain\Discographer.Domain.csproj", "{9E093D21-2870-4A14-A282-1A6482011980}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{18801C06-C859-4593-B62F-B22D30ABB09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18801C06-C859-4593-B62F-B22D30ABB09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18801C06-C859-4593-B62F-B22D30ABB09C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E093D21-2870-4A14-A282-1A6482011980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E093D21-2870-4A14-A282-1A6482011980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E093D21-2870-4A14-A282-1A6482011980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E093D21-2870-4A14-A282-1A6482011980}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

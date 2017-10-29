@@ -2,16 +2,31 @@
 using Discographer.Models;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
+using Discographer.Domain;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Discographer.Controllers
 {
     public class HomeController : Controller
     {
         private static readonly ILogger Log = Serilog.Log.ForContext<HomeController>();
+        private readonly DiscographerContext _context;
 
-        public IActionResult Index()
+        public HomeController(DiscographerContext context)
         {
-            return View();
+            _context = context;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var applicationSettings = await _context.ApplicationSettings.SingleAsync();
+
+            return View(new HomeModel
+            {
+                ApplicationSettingsId = applicationSettings.Id,
+                DiscogsToken = applicationSettings.DiscogsToken
+            });
         }
 
         public IActionResult About()
