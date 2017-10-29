@@ -38,6 +38,7 @@ namespace Discographer
             WebHost.CreateDefaultBuilder(args)
                    .UseStartup<Startup>()
                    .UseSerilog()
+                   .UseUrls("http://localhost:5000")
                    .Build();
     }
 }
